@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@media (min-width:320px) and (max-width: 749px) {
+    body{                                               /*контейнер*/
+        height: 100%;
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-template-rows: 150px auto;
+        grid-template-areas: 
+            "nav header"
+            "main main"
+        ;
+    }
+    #pageHeader{                                    /*хедер*/
+        grid-area: header;
+        padding: 8px;
+        align-self: center;
+        border-bottom: 5px solid rgb(75, 59, 28);
+        background: radial-gradient(100% 80%, #857154, #6b5a3f);
+    }
+    #menuBar{
+        grid-area: nav;
+        padding: 8px;
+        border-bottom: 5px solid rgb(75, 59, 28);
+        border-right: 5px solid rgb(75, 59, 28);
+        background-color: #857154;
+    }
+    #pageMenu{                                      /*менюшка*/
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 150px;
+        left: 0;
+        background-color: inherit;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 0px;
+    }
+    #main{                                          /*главная область*/
+        grid-area: main;
+        padding: 5px;
+    }
+    .h3_style{                                               /*заголовок*/   
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 25px;
+        line-height: 1.0;
+        margin-bottom: 0%;
+        color: #524833;
+    }
+    .p_style{                                               /*описание*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        margin-top: 1%;
+        color: #241d0b;
+    }
+    .button_style{                                          /*кнопка*/
+        border: 2px solid #6b6b6b;
+        margin-right: 2%;
+        margin-left: 65%;
+        margin-top: 1%;
+        text-align: center;
+    }
+    .source{                                                /*ссылка кнопки*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        color: #383429;
+        text-decoration: none;
+    }
+    .for_chapters{
+        font-family:'Roboto', sans-serif;
+        font-size: 20px;
+    }
+    .oglavlenie_block{
+        position: relative;
+        width: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 7em; 
+    }
+    .oglavlenie{
+        font-size: 35px;
+        font-family: 'Viaoda Libre', cursive;
+        color: #6b5a3f;
+        font-weight: 900;
+    }
+    .tooltip{
+        position: fixed;
+        padding: 5px 3px;
+        border: 1px solid rgb(75, 59, 28);
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 8px;
+        color: #524833;
+        background: #dfdfdf;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    }
+}
+
+@media (min-width:750px) and (max-width: 1023px){
+    body{                                               /*контейнер*/
+        height: 100%;
+        display: grid;
+        grid-template-columns: 10% auto;
+        grid-template-rows: 150px auto;
+        grid-template-areas: 
+            "nav header"
+            "main main"
+        ;
+    }
+    #pageHeader{                                    /*хедер*/
+        grid-area: header;
+        padding: 8px;
+        align-self: center;
+        border-bottom: 5px solid rgb(75, 59, 28);
+        background: radial-gradient(100% 80%, #857154, #6b5a3f);
+    }
+    #menuBar{
+        grid-area: nav;
+        padding: 8px;
+        border-bottom: 5px solid rgb(75, 59, 28);
+        border-right: 5px solid rgb(75, 59, 28);
+        background-color: #857154;
+    }
+    #pageMenu{                                      /*менюшка*/
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 150px;
+        left: 0;
+        background-color: inherit;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 0px;
+    }
+    #main{                                          /*главная область*/
+        grid-area: main;
+        padding: 5px;
+    }
+    .h3_style{                                               /*заголовок*/   
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 30px;
+        line-height: 1.0;
+        margin-bottom: 0%;
+        color: #524833;
+    }
+    .p_style{                                               /*описание*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        margin-top: 1%;
+        color: #241d0b;
+    }
+    .button_style{                                          /*кнопка*/
+        border: 2px solid #6b6b6b;
+        margin-right: 2%;
+        margin-left: 75%;
+        text-align: center;
+    }
+    .source{                                                /*ссылка кнопки*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        color: #383429;
+        text-decoration: none;
+    }
+    .for_chapters{
+        font-family:'Roboto', sans-serif;
+        font-size: 25px;
+    }
+    .oglavlenie_block{
+        position: relative;
+        width: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 8em; 
+    }
+    .oglavlenie{
+        font-size: 45px;
+        font-family: 'Viaoda Libre', cursive;
+        color: #6b5a3f;
+        font-weight: 900;
+    }
+    .tooltip{
+        position: fixed;
+        padding: 8px 4px;
+        border: 1px solid rgb(75, 59, 28);
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        color: #524833;
+        background: #dfdfdf;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 2560px){
+    body{                                               /*контейнер*/
+        height: 100%;
+        display: grid;
+        grid-template-columns: 7% auto;
+        grid-template-rows: 150px auto;
+        grid-template-areas: 
+            "header header"
+            "nav main"
+        ;
+    }
+    #pageHeader{                                    /*хедер*/
+        grid-area: header;
+        padding: 10px;
+        border-bottom: 5px solid rgb(75, 59, 28);
+        background: radial-gradient(100% 80%, #857154, #6b5a3f);
+    }
+    #menuBar{
+        visibility: hidden;
+    }
+    #pageMenu{                                      /*менюшка*/
+        grid-area: nav;
+        padding: 10px;
+        border-right: 5px solid rgb(75, 59, 28);
+        display: flex;
+        flex-direction: column;
+    }
+    #main{                                          /*главная область*/
+        grid-area: main;
+    }
+    .h3_style{                                               /*заголовок*/   
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 35px;
+        line-height: 1.0;
+        margin-bottom: 0%;
+        color: #524833;
+    }
+    .p_style{                                               /*описание*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin-top: 1%;
+        color: #241d0b;
+    }
+    .button_style{                                          /*кнопка*/
+        border: 2px solid #6b6b6b;
+        margin-right: 2%;
+        margin-left: 85%;
+        text-align: center;
+    }
+    .source{                                                /*ссылка кнопки*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        color: #383429;
+        text-decoration: none;
+    }
+    .for_chapters{
+        font-family:'Roboto', sans-serif;
+        font-size: 30px;
+    }
+    .oglavlenie_block{
+        position: relative;
+        width: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 10em; 
+    }
+    .oglavlenie{
+        font-size: 55px;
+        font-family: 'Viaoda Libre', cursive;
+        color: #6b5a3f;
+        font-weight: 900;
+    }
+    .tooltip{
+        position: fixed;
+        padding: 10px 5px;
+        border: 1px solid rgb(75, 59, 28);
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: #524833;
+        background: #dfdfdf;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    }
+}
+
+.front{                                              /*фотка*/
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.h3_style:hover{
+    color: #887d62;
+}
+.p_style a{
+    color: #4d4431;
+}
+.p_style a:hover{
+    color: #887d62;
+}
+.block_style{                                       /*сам блок*/
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-bottom: 2px solid rgb(75, 59, 28);
+}
+.block_style:hover{
+    background-color: #e9e9e9ee;
+}
+.button_style a{
+    display: block;
+}
+.back{
+    background-color: #dfdfdf;
+}
+
+#attention_advent, #attention_diab, #attention_system, #attention_minister, #attention_lanya,
+#attention_wolf, #attention_erha_1, #attention_erha_2
+{                                                   /*окна с пердупреждениями*/
+    background: rgba(48, 48, 48, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#okno {                                             /*сами окна*/
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 15px;
+    border: 3px solid #2b2211;
+    border-radius: 10px;
+    color: #ebe4d5;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgb(143, 120, 103);
+}
+#attention_advent:target, #attention_diab:target, #attention_system:target, #attention_minister:target,
+#attention_lanya:target, #attention_erha_1:target, #attention_wolf:target, #attention_erha_2:target
+{display: block;}
+.close {                                                /*кнопки в окне*/
+    display: inline-block;
+    border: 1px solid #2b2211;
+    color: #1b1209;
+    padding: 0 12px;    
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    background: #ebe4d5;
+    cursor:pointer;
+}
+#okno > a{
+    position: absolute;
+    right: 3%;
+    top: 1%;
+    font-size: 45px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.block_chapter{
+    padding-left: 3%;
+    padding-top: 3%;
+}
+.for_chapters a{
+    color: #6b5a3f;
+}

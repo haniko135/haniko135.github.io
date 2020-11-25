@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@media (min-width: 320px) and (max-width: 749px){
+    body{                                               /*контейнер*/
+        height: 100%;
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-template-rows: 150px auto;
+        grid-template-areas: 
+            "nav header"
+            "main main"
+        ;
+    }
+    #pageHeader{                                    /*хедер*/
+        grid-area: header;
+        padding: 8px;
+        border-bottom: 5px solid rgb(173, 173, 173);
+        align-self: center;
+    }
+    #menuBar{
+        grid-area: nav;
+        padding: 8px;
+        border-bottom: 5px solid rgb(173, 173, 173);
+        border-right: 5px solid rgb(173, 173, 173) ;
+        background-color: #ceba85;
+    }
+    #pageMenu{                                      /*менюшка*/
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 150px;
+        left: 0;
+        background-color: inherit;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 0px;
+    }
+    #main{                                          /*главная область*/
+        grid-area: main;
+        padding: 5px;
+    }
+    .h3_style{                                               /*заголовок*/   
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 25px;
+        line-height: 1.0;
+        margin-bottom: 0%;
+        color: #c5bba6;
+    }
+    .p_style{                                               /*описание*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        margin-top: 1%;
+        color: #beb59f;
+    }
+    .source{                                                /*ссылка кнопки*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        color: #beb59f;
+        text-decoration: none;
+    }
+    .button_style{                                          /*кнопка*/
+        border: 2px solid #7e6d36;
+        margin-right: 2%;
+        margin-top: 1%;
+        margin-left: 65%;
+        text-align: center;
+    }
+    .oglavlenie{
+        font-size: 35px;
+        font-family: 'Viaoda Libre', cursive;
+        color: #e6e6e6;
+        font-weight: 900;
+        /*text-decoration: underline #d8d8d8;*/
+    }
+    .for_chapters{
+        font-family:'Roboto', sans-serif;
+        font-size: 20px;
+        color: #c5c5c5;
+    }
+    .oglavlenie_block{
+        position: relative;
+        width: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 7em;   
+    }
+    .tooltip{
+        position: fixed;
+        padding: 5px 3px;
+        border: 1px solid #9c9c9c;
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 8px;
+        color: #c5bba6;
+        background: #333;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    }
+}
+
+@media (min-width:750px) and (max-width: 1023px){
+    body{                                               /*контейнер*/
+        height: 100%;
+        display: grid;
+        grid-template-columns: 10% auto;
+        grid-template-rows: 150px auto;
+        grid-template-areas: 
+            "nav header"
+            "main main"
+        ;
+    }
+    #pageHeader{                                    /*хедер*/
+        grid-area: header;
+        padding: 8px;
+        border-bottom: 5px solid rgb(173, 173, 173);
+        align-self: center;
+    }
+    #menuBar{
+        grid-area: nav;
+        padding: 8px;
+        border-bottom: 5px solid rgb(173, 173, 173);
+        border-right: 5px solid rgb(173, 173, 173) ;
+        background-color: #ceba85;
+    }
+    #pageMenu{                                      /*менюшка*/
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 150px;
+        left: 0;
+        background-color: inherit;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 0px;
+    }
+    #main{                                          /*главная область*/
+        grid-area: main;
+        padding: 5px;
+    }
+    .h3_style{                                               /*заголовок*/   
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 30px;
+        line-height: 1.0;
+        margin-bottom: 0%;
+        color: #c5bba6;
+    }
+    .p_style{                                               /*описание*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        margin-top: 1%;
+        color: #beb59f;
+    }
+    .source{                                                /*ссылка кнопки*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        color: #beb59f;
+        text-decoration: none;
+    }
+    .button_style{                                          /*кнопка*/
+        border: 2px solid #7e6d36;
+        margin-right: 2%;
+        margin-left: 75%;
+        text-align: center;
+    }
+    .oglavlenie{
+        font-size: 45px;
+        font-family: 'Viaoda Libre', cursive;
+        color: #e6e6e6;
+        font-weight: 900;
+    }
+    .for_chapters{
+        font-family:'Roboto', sans-serif;
+        font-size: 25px;
+        color: #c5c5c5;
+    }
+    .oglavlenie_block{
+        position: relative;
+        width: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 7em;   
+    }
+    .tooltip{
+        position: fixed;
+        padding: 8px 4px;
+        border: 1px solid #9c9c9c;
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        color: #c5bba6;
+        background: #333;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 2560px){
+    body{                                               /*контейнер*/
+        height: 100%;
+        width:100%;
+        display: grid;
+        grid-template-columns: 7% auto;
+        grid-template-rows: 150px auto;
+        grid-template-areas: 
+            "header header"
+            "nav main"
+        ;
+    }
+    #pageHeader{                                    /*хедер*/
+        grid-area: header;
+        padding: 10px;
+        border-bottom: 5px solid rgb(173, 173, 173);
+    }
+    #menuBar{
+        visibility: hidden;
+    }
+    #pageMenu{                                      /*менюшка*/
+        grid-area: nav;
+        padding: 10px;
+        border-right: 5px solid rgb(173, 173, 173);
+        display: flex;
+        flex-direction: column;
+    }
+    #main{                                          /*главная область*/
+        grid-area: main;
+    }
+    .h3_style{                                               /*заголовок*/   
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 35px;
+        line-height: 1.0;
+        margin-bottom: 0%;
+        color: #c5bba6;
+    }
+    .p_style{                                               /*описание*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin-top: 1%;
+        color: #beb59f;
+    }
+    .source{                                                /*ссылка кнопки*/
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        color: #beb59f;
+        text-decoration: none;
+    }
+    .button_style{                                          /*кнопка*/
+        border: 2px solid #7e6d36;
+        margin-right: 2%;
+        margin-left: 85%;
+        text-align: center;
+    }
+    .oglavlenie{
+        font-size: 55px;
+        font-family: 'Viaoda Libre', cursive;
+        color: #e6e6e6;
+        font-weight: 900;
+    }
+    .for_chapters{
+        font-family:'Roboto', sans-serif;
+        font-size: 30px;
+        color: #c5c5c5;
+    }
+    .oglavlenie_block{
+        position: relative;
+        width: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 10em;   
+    }
+    .tooltip{
+        position: fixed;
+        padding: 10px 5px;
+        border: 1px solid #9c9c9c;
+        border-radius: 4px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: #c5bba6;
+        background: #333;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    }
+}
+
+.front{                                              /*фотка*/
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.h3_style:hover{
+    color: #c5c5c5;
+}
+.p_style a{
+    color: #beb59f;
+}
+.p_style a:hover{
+    color: #c5c5c5;
+}
+.block_style{                                       /*сам блок*/
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-bottom: 2px solid rgb(173, 173, 173);
+}
+.block_style:hover{
+    background-color: #272727;
+}
+.button_style a{
+    display: block;
+}
+.back{
+    background-color: #0e0e0e;
+}
+
+#attention_advent, #attention_diab, #attention_system, #attention_minister, #attention_lanya,
+#attention_wolf, #attention_erha_1, #attention_erha_2
+{                                                   /*окна с пердупреждениями*/
+    background: rgba(48, 48, 48, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#okno {                                             /*сами окна*/
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 15px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    color: #d8d8d8;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgb(17, 17, 17);
+}
+#attention_advent:target, #attention_diab:target, #attention_system:target, #attention_minister:target,
+#attention_lanya:target, #attention_erha_1:target, #attention_wolf:target, #attention_erha_2:target
+{display: block;}
+.close {                                                /*кнопки в окне*/
+    display: inline-block;
+    border: 1px solid #000000;
+    color: #141414;
+    padding: 0 12px;    
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    background: #ececec;
+    cursor:pointer;
+}
+#okno > a{
+    position: absolute;
+    right: 3%;
+    top: 1%;
+    font-size: 45px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.block_chapter{
+    padding-left: 3%;
+    padding-top: 3%;
+}
+.for_chapters a{
+    color:#c5c5c5;
+}

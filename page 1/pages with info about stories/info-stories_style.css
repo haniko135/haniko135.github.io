@@ -1,0 +1,39 @@
+img.front{                                              /*фотка*/
+    height: 50%;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 0%;
+}
+.h3_style{                                              /*заголовок*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    color:  #c5bba6;
+    text-align: center;
+    text-decoration: none;
+}
+.p_style{                                               /*абзац*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #beb59f;
+}
+.button_style{                                          /*кнопка*/
+    border: 2px solid #8b9686;
+    margin-right: 35%;
+    margin-left: 35%;
+    text-align: center;
+}
+.source{                                                /*ссылка*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #beb59f;
+    text-decoration: none;
+}
+.background{
+    background-color: #0e0e0e;
+}

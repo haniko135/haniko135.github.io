@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Хаски и его учитель-кот</title>
+        <link rel="stylesheet" href="info-content_style.css">         <!--Контент внутри main-->
+        <link rel="stylesheet" href="../../top/top_style_dark.css">                 <!--Хедер-->
+        <link rel="stylesheet" href="../../content/content_menu_dark.css">          <!--Менюшка-->
+        <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">               <!--Фавиконка-->
+
+        <!---Иконки для менюшки-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Google Fonts Viaoda Libre для заголовков-->
+        <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+        <!--Google Fonts Roboto для основного текста-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="info_pages_script.js"></script>
+    </head>
+
+    <body class="background">
+
+        <header id="pageHeader">
+            <a name="main_anchor"></a>
+            <p class="name_style">SideStory</p>
+        </header>
+
+        <div id="menuBar">
+            <div class="icon-bar">
+                <a href="#main_anchor" class="active" onclick="dropMenu()" id="menuIcon"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+
+            <div id="pageMenu">
+                    <div class="icon-bar">
+                        <a href="../page_1 (ver.1.2) dark.html#home_anchor"><i class="fa fa-home"></i></a>
+                        <a href="#main_anchor" onclick="openNav()" id="searchIcon"><i class="fa fa-search"></i></a>
+                        <a href="../../../instruction.html"><i class="fa fa-question"></i></a>
+                        <a href="../pages with info about stories (ver 1.1) light/Erha_info (ver 1.2).html"><i class="fa fa-adjust"></i></a>
+                    </div>
+            </div>
+
+            <div id="mySidenav" class="sidenav">
+                <p class="search_p">Поиск</p>
+                <form>
+                    <input type="search" placeholder="Введите искомое здесь..." id="textToFind" onkeyup="searchOnPage()">
+                    <button type="submit"></button>
+                </form>
+                <ul id="menuSearch">
+                    <li><a href="Founder_info (ver 1.1).html">Магистр дьявольского культа</a></li>
+                    <li><a href="Minister_info (ver 1.1).html">Премьер-министр под прекрытием</a></li>
+                    <li><a href="Adventure_to_immortal_ info (ver 1.1).html">Путешествие к бессмертию</a></li>
+                    <li><a href="System_info (ver 1.1).html">Система "Спаси-себя-сам" для главного злодея</a></li>
+                    <li><a href="Lanya_info (ver 1.1).html">Список архива Ланъя</a></li>
+                    <li><a href="Wolf_info (ver 1.1).html" target="_self">Убить волка</a></li>
+                    <li><a href="#main-anchor" target="_self">Хаски и его учитель-кот</a></li>
+                </ul>
+            </div>
+
+            <div id="main">
+                <div class="block_style">
+                    <img src="../../img/erha.jpg" class="front">
+                    <div>
+                        <h1 class="h3_style"><b>Хаски и его учитель-кот</b></h1>
+                        <p class="p_style">
+                            Мо Жань чувствовал, что выбрать Чу Ваньнина учителем было большой ошибкой.<br>
+                            По правде говоря, Уважаемый Учитель слишком уж похож на кота, а сам он – на постоянно крутящегося под ногами и виляющего хвостом глупого щенка. <br>
+                            Псы и коты относятся к разным видам и не могут быть вместе, и глупый пес изначально вовсе не планировал тянуть к коту свои мохнатые лапы.<br>
+                            Он нутром чуял, что раз уж родился собакой, то должен выбрать себе в пару другую собаку. Вот взять к примеру его старшего брата-наставника, похожего на прелестного шпица, вместе они составили бы идеальную пару. <br>
+                        </p>
+                        <br><br>
+                        <p class="p_style"><b class="attention">Рейтинг:</b> NC-17</p>
+                        <p class="p_style"><b class="attention">Жанры:</b> новелла, приключение, драма, философия, боевые искусства</p>
+                        <p class="p_style"><b class="attention">Aвтор:</b> Жоубао Бучи Жоу</p>
+                        <p class="p_style"><b class="attention">Предупреждения:</b> насилие, возрождение, гуро, безнравственность, сомнительные принципы</p>
+                        <p class="p_style"><b class="attention">Возрастное ограничение:</b> 18+</p>
+                    </div>
+                    <div class="button_style">
+                        <a href="#attention_erha_1" class="source" target="_self">ИГРАТЬ</a>
+                    </div>
+                    <div id="attention_erha_1">
+                        <div id="okno">
+                            Вам точно есть 18+? <a href="#main">&times;</a> <br>
+                            <img src="../age.jpg" alt="возраст" height="207px" width="195px" style="float: left; padding-left: 25px;">
+                            <div style="margin-left: 200px; margin-top: 50px;">
+                                <a href="#attention_erha_2" class="close">ДА</a>
+                                <a href="#main_anchor" class="close">НЕТ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="attention_erha_2">
+                        <div id="okno">
+                          Вы точно готовы пережить моральное и эмоциональное изнасилование?<br>
+                          <a href="../../../page 2/Хаски и его белый кот-учитель (Тест).html" class="close">ДА</a>
+                          <a href="#main_anchor" class="close">НЕТ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </body>
+</html>

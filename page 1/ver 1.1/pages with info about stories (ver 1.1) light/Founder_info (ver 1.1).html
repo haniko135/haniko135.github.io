@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Магистр дьявольского культа</title>
+        <link rel="stylesheet" href="info-content_style.css">         <!--Контент внутри main-->
+        <link rel="stylesheet" href="../../top/top_style_light.css">                 <!--Хедер-->
+        <link rel="stylesheet" href="../../content/content_menu_light.css">          <!--Менюшка-->
+        <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">               <!--Фавиконка-->
+        
+        <!---Иконки для менюшки-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Google Fonts Viaoda Libre для заголовков-->
+        <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+        <!--Google Fonts Roboto для основного текста-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <script src="info_pages_script.js"></script>
+    </head>
+    <body class="backgrnd">
+        <a name="main"></a>
+
+        <header id="pageHeader">
+            <a name="main_anchor"></a>
+            <p class="name_style">SideStory</p>
+        </header>
+
+        <div id="menuBar">
+            <div class="icon-bar">
+                <a href="#main_anchor" class="active" onclick="dropMenu()" id="menuIcon"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+
+            <div id="pageMenu">
+                    <div class="icon-bar">
+                        <a href="../page_1 (ver.1.2) light.html#home_anchor"><i class="fa fa-home"></i></a>
+                        <a href="#main_anchor" onclick="openNav()" id="searchIcon"><i class="fa fa-search"></i></a>
+                        <a href="../../../instruction.html"><i class="fa fa-question"></i></a>
+                        <a href="../pages with info about stories (ver 1.1) dark/Founder_info (ver 1.1).html"><i class="fa fa-adjust"></i></a>
+                    </div>
+            </div>
+
+            <div id="mySidenav" class="sidenav">
+                <p class="search_p">Поиск</p>
+                <form>
+                    <input type="search" placeholder="Введите искомое здесь..." id="textToFind" onkeyup="searchOnPage()">
+                    <button type="submit"></button>
+                </form>
+                <ul id="menuSearch">
+                    <li><a href="#main_anchor">Магистр дьявольского культа</a></li>
+                    <li><a href="Minister_info (ver 1.1).html">Премьер-министр под прекрытием</a></li>
+                    <li><a href="Adventure_to_immortal_ info (ver 1.1).html">Путешествие к бессмертию</a></li>
+                    <li><a href="System_info (ver 1.1).html">Система "Спаси-себя-сам" для главного злодея</a></li>
+                    <li><a href="Lanya_info (ver 1.1).html">Список архива Ланъя</a></li>
+                    <li><a href="Wolf_info (ver 1.1).html" target="_self">Убить волка</a></li>
+                    <li><a href="Erha_info (ver 1.2).html" target="_self">Хаски и его учитель-кот</a></li>
+                </ul>
+            </div>
+
+            <div id="main">
+                <div class="block_style">
+                    <img src="../../img/the_founder_of_diabolic.jpg" class="front">
+                    <h1 class="h3_style"><b>Магистр дьявольского культа</b></h1>
+                    <p class="p_style">
+                        Когда-то давно Основатель Пути Тьмы Вэй Уcянь странствовал по свету, творя невообразимые бесчинства 
+                        и хаос, за что миллионы людей ненавидели его. В конце концов он был предан своим шиди и убит союзом кланов, 
+                        объединившихся, чтобы сокрушить его. Вэй Усянь переродился в теле чудака, от которого отказался родной клан. 
+                        Позже его против воли забрал к себе Лань Ванцзи — его давний знакомый.<br>
+                        Так началась захватывающая история, полная сражений с монстрами, решения загадок и обучения подрастающего 
+                        поколения. Флиртуя с Лань Ванцзи, Вэй Усянь постепенно осознает, что обычно высокомерный и сдержанный, Лань 
+                        Ванцзи таит к нему особые чувства.<br>
+                    </p>
+                    <p class="p_style"><b class="attention">Рейтинг:</b> NC-17</p>
+                    <p class="p_style"><b class="attention">Жанры:</b> новелла, приключение, драма, детектив, боевые искусства, сянься, фэнтези, комедия, сверхъестественное</p>
+                    <p class="p_style"><b class="attention">Aвтор:</b> Мосян Тунсю</p>
+                    <p class="p_style"><b class="attention">Предупреждения:</b> насилие, смерть основного персонажа, гуро, смерть второстепенных персонажей, трагичное прошлое</p>
+                    <p class="p_style"><b class="attention">Возрастное ограничение:</b> 18+</p>
+                    <br><br><br><br><br>
+                    <div class="button_style">
+                        <a href="#attention_diab" class="source" target="_self">ИГРАТЬ</a>
+                    </div>
+
+                    <div id="attention_diab">
+                        <div id="okno">
+                            Вам точно есть 18+? <a href="#main_anchor">&times;</a> <br>
+                            <img src="../age.jpg" alt="возраст" height="207px" width="195px" style="float: left; padding-left: 25px;">
+                            <div style="margin-left: 200px; margin-top: 50px;">
+                                <a href="../../../page 2/Магистр дьявольского культа/Оглавление Магистр light.html" class="close">ДА</a>
+                                <a href="#main_anchor" class="close">НЕТ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

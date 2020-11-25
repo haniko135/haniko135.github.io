@@ -1,0 +1,236 @@
+@media(min-width: 1024px) and (max-width: 2560px){
+    .icon-bar {
+        width: 55px; 
+        position: fixed;
+    }
+    .icon-bar a {
+        display: block; /* Make the links appear below each other instead of side-by-side */
+        text-align: center; /* Center-align text */
+        padding-top: 20px;
+        padding-bottom: 20px;/* Add some padding */
+        transition: all 0.5s ease; /* Add transition for hover effects */
+        color: #f3f1f1; /* White text color */
+        font-size: 45px; /* Increased font-size */
+    }
+    #menuSearch li a{
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 22px;
+        padding: 12px;
+        text-decoration: none;
+        color: #d1d1d1;
+        display: block
+    }
+    .search_p{
+        font-size: 30px;
+        text-align: center;
+        color: #d1d1d1;
+        position: relative;
+        font-family: 'Viaoda Libre', cursive;
+        font-weight: bold;
+    }
+    input {
+        width: 70%;
+        height: 26px;
+        padding-left: 10px;
+        border: 2px solid #cfcfcf;
+        border-radius: 5px;
+        outline: none;
+        background: #F9F0DA;
+        color: #9E9C9C;
+    }
+    button{
+        position: relative; 
+        top: 1px;
+        right: 15px;
+        width: 29px;
+        height: 26px;
+        border: none;
+        background: #d1d1d1;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    button:before {
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 16px;
+        color: #fffaec;
+    }
+}
+
+@media (min-width:320px) and (max-width: 749px){
+    .icon-bar {
+        width: auto;
+    }
+    .icon-bar a {
+        display: block; /* Make the links appear below each other instead of side-by-side */
+        text-align: center; /* Center-align text */
+        padding-top: 30px;
+        padding-bottom: 30px;/* Add some padding */
+        transition: all 0.5s ease; /* Add transition for hover effects */
+        color: #f3f1f1; /* White text color */
+        font-size: 45px; /* Increased font-size */
+    }
+    #menuSearch li a{
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 32px;
+        padding: 12px;
+        text-decoration: none;
+        color: #d1d1d1;
+        display: block
+    }
+    .search_p{
+        font-size: 40px;
+        text-align: center;
+        color: #d1d1d1;
+        position: relative;
+        font-family: 'Viaoda Libre', cursive;
+        font-weight: bold;
+    }
+    input {
+        width: 70%;
+        height: 45px;
+        padding-left: 10px;
+        border: 2px solid #cfcfcf;
+        border-radius: 5px;
+        outline: none;
+        background: #F9F0DA;
+        color: #9E9C9C;
+    }
+    button{
+        position: relative; 
+        top: 2px;
+        right: 20px;
+        width: 35px;
+        height: 48px;
+        border: none;
+        background: #d1d1d1;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    button:before {
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 22px;
+        color: #fffaec;
+    }
+}
+
+@media (min-width:750px) and (max-width: 1023px){
+    .icon-bar {
+        width: auto; /* Set a specific width */
+    }
+    .icon-bar a {
+        display: block; /* Make the links appear below each other instead of side-by-side */
+        text-align: center; /* Center-align text */
+        padding-top: 30px;
+        padding-bottom: 30px;/* Add some padding */
+        transition: all 0.5s ease; /* Add transition for hover effects */
+        color: #f3f1f1; /* White text color */
+        font-size: 60px; /* Increased font-size */
+    }
+    #menuSearch li a{
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 32px;
+        padding: 12px;
+        text-decoration: none;
+        color: #d1d1d1;
+        display: block
+    }
+    .search_p{
+        font-size: 40px;
+        text-align: center;
+        color: #d1d1d1;
+        position: relative;
+        font-family: 'Viaoda Libre', cursive;
+        font-weight: bold;
+    }
+    input {
+        width: 70%;
+        height: 45px;
+        padding-left: 10px;
+        border: 2px solid #cfcfcf;
+        border-radius: 5px;
+        outline: none;
+        background: #F9F0DA;
+        color: #9E9C9C;
+    }
+    button{
+        position: relative; 
+        top: 2px;
+        right: 20px;
+        width: 35px;
+        height: 48px;
+        border: none;
+        background: #d1d1d1;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    button:before {
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 22px;
+        color: #fffaec;
+    }
+}
+
+.icon-bar a:hover {
+    background-color: rgb(233, 233, 233); /* Add a hover color */
+}
+
+.active {
+    background-color: #857154; /* Add an active/current color */
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:#705f45;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #161616;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #c4c4c4;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#home_anchor {
+    transition: margin-left .5s;
+}
+
+
+
+form {
+    position: relative;
+    width: 300px;
+    margin: 10px;
+}
+#menuSearch{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#menuSearch li a:hover{
+    background-color: #ffffff;
+}
