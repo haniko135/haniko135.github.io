@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Оглавление</title>
+        <link rel="stylesheet" href="../../page 1/content/content_style_dark.css">         <!--Контент внутри main-->
+        <link rel="stylesheet" href="../../page 1/top/top_style_dark.css">                 <!--Хедер-->
+        <link rel="stylesheet" href="../../page 1/content/content_menu_dark.css">          <!--Менюшка-->
+        <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+        <!---Иконки для менюшки-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Google Fonts Viaoda Libre для заголовков-->
+        <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+        <!--Google Fonts Roboto для основного текста-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="../../page 1/content/oglavlenie_script_dark.js"></script>
+    </head>
+    <body class="background">
+
+        <header id="pageHeader">
+            <a name="home_anchor"></a>
+            <p class="name_style">SideStory</p>
+        </header>
+
+        <div id="menuBar">
+            <div class="icon-bar">
+                <a href="#home_anchor" class="active" onclick="dropMenu()" id="menuIcon"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div id="pageMenu">
+                <div class="icon-bar">
+                    <a href="../../page 1/ver 1.1/page_1 (ver.1.2) dark.html" id="homeIcon"><i class="fa fa-home"></i></a>
+                    <a href="#home_anchor" onclick="openNav()" id="searchIcon"><i class="fa fa-search"></i></a>
+                    <a href="../../instruction.html"><i class="fa fa-question"></i></a>
+                    <a href="Оглавление Ланъя light.html"><i class="fa fa-adjust"></i></a>
+                </div>
+        </div>
+
+
+        <div id="mySidenav" class="sidenav">
+            <p class="search_p">Поиск</p>
+            <form>
+                <input type="search" placeholder="Введите искомое здесь..." title="searchline" id="textToFind"
+                    onkeyup="searchOnPage()">
+                <button type="submit" title="submit"></button>
+            </form>
+            <ul id="menuSearch">
+                <li><a href="../../page 1/ver 1.1/pages with info about stories (ver 1.1) dark/Founder_info (ver 1.1).html">Магистр дьявольского культа</a></li>
+                <li><a href="../../page 1/ver 1.1/pages with info about stories (ver 1.1) dark/Adventure_to_immortal_ info (ver 1.1).html">Путешествие к бессмертию</a></li>
+                <li><a href="../../page 1/ver 1.1/pages with info about stories (ver 1.1) dark/Minister_info (ver 1.1).html">Премьер-министр под прекрытием</a></li>
+                <li><a href="../../page 1/ver 1.1/pages with info about stories (ver 1.1) dark/System_info (ver 1.1).html">Система "Спаси-себя-сам" для главного злодея</a></li>
+                <li><a href="../../page 1/ver 1.1/pages with info about stories (ver 1.1) dark/Lanya_info (ver 1.1).html">Список архива Ланъя</a></li>
+                <li><a href="../../page 1/ver 1.1/pages with info about stories (ver 1.1) dark/Wolf_info (ver 1.1).html" target="_self">Убить волка</a></li>
+                <li><a href="../../page 1/ver 1.1/pages with info about stories (ver 1.1) dark/Erha_info (ver 1.2).html" target="_self">Хаски и его учитель-кот</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <div>
+                <div class="oglavlenie_block">
+                    <span class="oglavlenie">ОГЛАВЛЕНИЕ</span>
+                </div>
+                <div class="block_chapter">
+                    <p class="for_chapters"><a href="Вей Усянь/1 глава/ch_1.html">Глава 1. Пролог</a></p>
+                </div>
+                <div class="block_chapter">
+                    <p class="for_chapters"><a href="Вей Усянь/2 глава/ch_2_1.html">Глава 2. Перерождение</a></p>
+                </div>
+                <div class="block_chapter">
+                    <p class="for_chapters"><a href="Вей Усянь/3 глава/ch_3_1.html">Глава 3. Нападение. Часть первая</a></p>
+                </div>
+                <div class="block_chapter">
+                    <p class="for_chapters"><a href="Вей Усянь/4 глава/ch_4_1.html">Глава 4. Нападение. Часть вторая</a></p>
+                </div>
+                <!--<div class="block_chapter">
+                    <p class="for_chapters"><a href="глава 5/ch_5.1.html">Глава 5.</a></p>
+                </div>
+                <div class="block_chapter">
+                    <p class="for_chapters"><a href="">Глава 6. Первый блин комом</a></p>
+                </div>
+                <div class="block_chapter">
+                    <p class="for_chapters"><a href="">Глава 7. Нерушимая_сюжетная_броня</a></p>
+                </div>
+                <div class="block_chapter">
+                    <p class="for_chapters"><a href="">Глава 8. Вырыл яму главному герою и засыпал сахаром</a></p>
+                </div>
+                <div class="block_chapter">
+                    <p class="for_chapters"><a href="">Глава 9 Лорд Пика Бай Чжань</a></p>
+                </div>
+                <div class="block_chapter">
+                    <p class="for_chapters"><a href="">Глава 10 Провокация демонессы</a></p>
+                </div>-->
+            </div>
+        </div>
+
+    </body>
+</html> 
