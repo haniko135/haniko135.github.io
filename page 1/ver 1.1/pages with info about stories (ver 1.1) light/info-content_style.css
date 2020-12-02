@@ -84,6 +84,42 @@
         color: #383429;
         text-decoration: none;
     }
+    #okno {
+        width: 300px;
+        height: 250px;
+        text-align: center;
+        padding: 10px;
+        border: 3px solid #2b2211;
+        border-radius: 10px;
+        color: #ebe4d5;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 28px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: rgb(143, 120, 103);
+    }
+    #okno > img{
+        float: left; 
+        margin-top: 20px;
+        height: 150px;
+        width: 150px;
+    }
+    #okno > div{
+        display: flex;
+        flex-direction: column;
+    }
+    #okno > a[href="#main_anchor"]{
+        position: absolute;
+        right: 3%;
+        top: 1%;
+        font-size: 35px;
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 @media (min-width:750px) and (max-width: 1023px){
@@ -166,6 +202,42 @@
         color: #383429;
         text-decoration: none;
     }
+    #okno {
+        width: 500px;
+        height: 250px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #2b2211;
+        border-radius: 10px;
+        color: #ebe4d5;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 35px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: rgb(143, 120, 103);
+    }
+    #okno > img{
+        float: left; 
+        padding-left: 25px;
+        height: 207px;
+        width: 195px;
+    }
+    #okno > div{
+        margin-left: 200px; 
+        margin-top: 50px;
+    }
+    #okno > a[href="#main_anchor"]{
+        position: absolute;
+        right: 3%;
+        top: 1%;
+        font-size: 45px;
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 2560px){
@@ -237,6 +309,42 @@
         color: #383429;
         text-decoration: none;
     }
+    #okno {
+        width: 500px;
+        height: 250px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #2b2211;
+        border-radius: 10px;
+        color: #ebe4d5;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 35px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: rgb(143, 120, 103);
+    }
+    #okno > img{
+        float: left; 
+        padding-left: 25px;
+        height: 207px;
+        width: 195px;
+    }
+    #okno > div{
+        margin-left: 200px; 
+        margin-top: 50px;
+    }
+    #okno > a[href="#main_anchor"]{
+        position: absolute;
+        right: 3%;
+        top: 1%;
+        font-size: 45px;
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .block_style{                                       /*сам блок*/
@@ -247,7 +355,7 @@
     background-color:#dfdfdf;
 }
 #attention_advent, #attention_diab, #attention_system, #attention_minister, #attention_lanya,
-#attention_wolf, #attention_erha_1, #attention_erha_2
+#attention_wolf, #attention_erha_1, #attention_erha_2, #sorry
 {
     background: rgba(48, 48, 48, 0.5);
     width: 100%;
@@ -257,26 +365,8 @@
     left: 0;
     display: none;
 }
-#okno {
-    width: 500px;
-    height: 250px;
-    text-align: center;
-    padding: 15px;
-    border: 3px solid #2b2211;
-    border-radius: 10px;
-    color: #ebe4d5;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 35px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    background: rgb(143, 120, 103);
-}
 #attention_advent:target, #attention_diab:target, #attention_system:target, #attention_minister:target,
-#attention_lanya:target, #attention_erha_1:target, #attention_wolf:target, #attention_erha_2:target
+#attention_lanya:target, #attention_erha_1:target, #attention_wolf:target, #attention_erha_2:target, #sorry:target
 {display: block;}
 .close {
     display: inline-block;
@@ -289,12 +379,4 @@
     text-decoration: none;
     background: #ebe4d5;
     cursor:pointer;
-}
-#okno > a{
-    position: absolute;
-    right: 3%;
-    top: 1%;
-    font-size: 45px;
-    text-decoration: none;
-    color: inherit;
 }
