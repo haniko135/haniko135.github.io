@@ -4,13 +4,13 @@
         position: fixed;
     }
     .icon-bar a {
-        display: block; /* Make the links appear below each other instead of side-by-side */
-        text-align: center; /* Center-align text */
+        display: block;
+        text-align: center;
         padding-top: 20px;
-        padding-bottom: 20px;/* Add some padding */
-        transition: all 0.5s ease; /* Add transition for hover effects */
-        color: white; /* White text color */
-        font-size: 45px; /* Increased font-size */
+        padding-bottom: 20px;
+        transition: all 0.5s ease;
+        color: white;
+        font-size: 45px;
     }
     #menuSearch li a{
         font-family: 'Viaoda Libre', cursive;
@@ -55,30 +55,42 @@
         font-size: 16px;
         color: #fffaec;
     }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: inherit;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
 }
 @media (min-width:320px) and (max-width: 749px) {
     .icon-bar {
-        width: auto; /* Set a specific width */
+        width: auto;
     }
     .icon-bar a {
-        display: block; /* Make the links appear below each other instead of side-by-side */
-        text-align: center; /* Center-align text */
+        display: block;
+        text-align: center;
         padding-top: 30px;
-        padding-bottom: 30px;/* Add some padding */
-        transition: all 0.5s ease; /* Add transition for hover effects */
-        color: white; /* White text color */
-        font-size: 45px; /* Increased font-size */
+        padding-bottom: 30px;
+        transition: all 0.5s ease;
+        color: white;
+        font-size: 45px;
     }
     #menuSearch li a{
         font-family: 'Viaoda Libre', cursive;
-        font-size: 32px;
-        padding: 12px;
+        font-size: 18px;
+        padding: 10px;
         text-decoration: none;
         color: #d1d1d1;
         display: block
     }
     .search_p{
-        font-size: 40px;
+        font-size: 20px;
         text-align: center;
         color: #d1d1d1;
         position: relative;
@@ -86,21 +98,21 @@
         font-weight: bold;
     }
     input {
-        width: 70%;
-        height: 45px;
-        padding-left: 10px;
+        width: 50%;
+        height: 35px;
+        padding-left: 5px;
         border: 2px solid #cfcfcf;
         border-radius: 5px;
         outline: none;
-        background: #F9F0DA;
+        background: #fffdf9;
         color: #9E9C9C;
     }
     button{
         position: relative; 
-        top: 2px;
-        right: 20px;
-        width: 35px;
-        height: 48px;
+        top: 1px;
+        right: 15px;
+        width: 25px;
+        height: 35px;
         border: none;
         background: #d1d1d1;
         border-radius: 0 5px 5px 0;
@@ -109,34 +121,46 @@
     button:before {
         content: "\f002";
         font-family: FontAwesome;
-        font-size: 22px;
+        font-size: 15px;
         color: #fffaec;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: inherit;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 20px;
     }
 }
 
 @media (min-width:750px) and (max-width: 1023px) {
     .icon-bar {
-        width: auto; /* Set a specific width */
+        width: auto; 
     }
     .icon-bar a {
-        display: block; /* Make the links appear below each other instead of side-by-side */
-        text-align: center; /* Center-align text */
+        display: block; 
+        text-align: center; 
         padding-top: 30px;
-        padding-bottom: 30px;/* Add some padding */
-        transition: all 0.5s ease; /* Add transition for hover effects */
-        color: white; /* White text color */
-        font-size: 60px; /* Increased font-size */
+        padding-bottom: 30px;
+        transition: all 0.5s ease;
+        color: white;
+        font-size: 60px;
     }
     #menuSearch li a{
         font-family: 'Viaoda Libre', cursive;
-        font-size: 32px;
+        font-size: 23px;
         padding: 12px;
         text-decoration: none;
         color: #d1d1d1;
         display: block
     }
     .search_p{
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
         color: #d1d1d1;
         position: relative;
@@ -144,9 +168,9 @@
         font-weight: bold;
     }
     input {
-        width: 70%;
-        height: 45px;
-        padding-left: 10px;
+        width: 50%;
+        height: 40px;
+        padding-left: 5px;
         border: 2px solid #cfcfcf;
         border-radius: 5px;
         outline: none;
@@ -156,9 +180,9 @@
     button{
         position: relative; 
         top: 2px;
-        right: 20px;
+        right: 10px;
         width: 35px;
-        height: 48px;
+        height: 40px;
         border: none;
         background: #d1d1d1;
         border-radius: 0 5px 5px 0;
@@ -167,30 +191,29 @@
     button:before {
         content: "\f002";
         font-family: FontAwesome;
-        font-size: 22px;
+        font-size: 19px;
         color: #fffaec;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: inherit;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 40px;
     }
 }
 
 .icon-bar a:hover {
-    background-color: rgb(190, 190, 190); /* Add a hover color */
+    background-color: rgb(190, 190, 190); 
 }
 
 .active {
-    background-color: #ceba85; /* Add an active/current color */
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: inherit;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+    background-color: #ceba85; 
 }
 
 #home_anchor {
