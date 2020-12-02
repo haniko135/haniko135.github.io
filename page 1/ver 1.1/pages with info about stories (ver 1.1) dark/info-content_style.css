@@ -2,8 +2,7 @@
     padding: 0;
     margin: 0;
 }
-
-@media (min-width: 320px) and (max-width: 749px) {
+@media (min-width:320px) and (max-width: 749px){
     body{                                               /*контейнер*/
         height: 100%;
         display: grid;
@@ -17,16 +16,15 @@
     #pageHeader{                                    /*хедер*/
         grid-area: header;
         padding: 8px;
+        border-bottom: 5px solid rgb(173, 173, 173);
         align-self: center;
-        border-bottom: 5px solid rgb(75, 59, 28);
-        background: radial-gradient(100% 80%, #857154, #6b5a3f);
     }
     #menuBar{
         grid-area: nav;
         padding: 8px;
-        border-bottom: 5px solid rgb(75, 59, 28);
-        border-right: 5px solid rgb(75, 59, 28);
-        background-color: #857154;
+        border-bottom: 5px solid rgb(173, 173, 173);
+        border-right: 5px solid rgb(173, 173, 173);
+        background-color: #ceba85;
     }
     #pageMenu{                                      /*менюшка*/
         height: 100%;
@@ -44,35 +42,23 @@
         grid-area: main;
         padding: 5px;
     }
-    .front{                                              /*фотка*/
-        padding-left: 30%;
-        padding-right: 30%;
-        height: 40%;
-        width: 40%;
-    }
     .h3_style{                                               /*заголовок*/   
-        font-family: 'Viaoda Libre', cursive; 
+        font-family: 'Viaoda Libre', cursive;
         font-size: 45px;
         line-height: 1.0;
         margin-bottom: 2%;
-        color: #524833;
+        color: #c5bba6;
         text-align: center;
     }
     .p_style{                                               /*описание*/
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         margin-top: 2%;
-        color: #241d0b;
+        color: #beb59f;
         padding-left: 2%;
     }
-    .attention{
-        font-family: 'Viaoda Libre', cursive;
-        font-size: 30px;
-        margin-top: 2%;
-        color:  #4d4431;
-    }
     .button_style{                                          /*кнопка*/
-        border: 2px solid #6b6b6b;
+        border: 2px solid #7e6d36;
         margin-right: 30%;
         margin-left: 30%;
         margin-top: 3%;
@@ -81,17 +67,30 @@
     .source{                                                /*ссылка кнопки*/
         font-family: 'Roboto', sans-serif;
         font-size: 30px;
-        color: #383429;
+        color: #beb59f;
         text-decoration: none;
+    }
+    .front{                                              /*фотка*/
+        padding-left: 30%;
+        padding-right: 30%;
+        height: 40%;
+        width: 40%;
+    }
+    .attention{
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 30px;
+        margin-top: 2%;
+        color: #beb59f;
     }
     #okno {
         width: 300px;
         height: 250px;
+        line-height: 1.5;
         text-align: center;
         padding: 10px;
-        border: 3px solid #2b2211;
+        border: 3px solid #000000;
         border-radius: 10px;
-        color: #ebe4d5;
+        color: #d8d8d8;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 28px;
         position: absolute;
@@ -100,17 +99,7 @@
         bottom: 0;
         left: 0;
         margin: auto;
-        background: rgb(143, 120, 103);
-    }
-    #okno > img{
-        float: left; 
-        margin-top: 20px;
-        height: 150px;
-        width: 150px;
-    }
-    #okno > div{
-        display: flex;
-        flex-direction: column;
+        background: rgb(17, 17, 17);
     }
     #okno > a[href="#main_anchor"]{
         position: absolute;
@@ -119,6 +108,16 @@
         font-size: 35px;
         text-decoration: none;
         color: inherit;
+    }
+    #okno > img{
+        height: 150px;
+        width: 150px;
+        margin-top: 20px;
+        float: left; 
+    }
+    #okno > div{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -136,15 +135,15 @@
     #pageHeader{                                    /*хедер*/
         grid-area: header;
         padding: 8px;
-        border-bottom: 5px solid rgb(75, 59, 28);
-        background: radial-gradient(100% 80%, #857154, #6b5a3f);
+        border-bottom: 5px solid rgb(173, 173, 173);
+        align-self: center;
     }
     #menuBar{
         grid-area: nav;
         padding: 8px;
-        border-bottom: 5px solid rgb(75, 59, 28);
-        border-right: 5px solid rgb(75, 59, 28);
-        background-color: #857154;
+        border-bottom: 5px solid rgb(173, 173, 173);
+        border-right: 5px solid rgb(173, 173, 173) ;
+        background-color: #ceba85;
     }
     #pageMenu{                                      /*менюшка*/
         height: 100%;
@@ -160,37 +159,25 @@
     }
     #main{                                          /*главная область*/
         grid-area: main;
-    }
-    .front{                                              /*фотка*/
-        float: left;
-        height: 30%;
-        width: 30%;
-        margin-right: 2%;
-        margin-left: 2%;
+        padding: 5px;
     }
     .h3_style{                                               /*заголовок*/   
-        font-family: 'Viaoda Libre', cursive; 
-        font-size: 75px;
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 55px;
         line-height: 1.0;
         margin-bottom: 2%;
-        color: #524833;
+        color: #c5bba6;
         text-align: center;
     }
     .p_style{                                               /*описание*/
         font-family: 'Roboto', sans-serif;
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 2%;
-        color: #241d0b;
+        color: #beb59f;
         padding-left: 2%;
     }
-    .attention{
-        font-family: 'Viaoda Libre', cursive;
-        font-size: 40px;
-        margin-top: 2%;
-        color:  #4d4431;
-    }
     .button_style{                                          /*кнопка*/
-        border: 2px solid #6b6b6b;
+        border: 2px solid #7e6d36;
         margin-right: 35%;
         margin-left: 35%;
         margin-top: 3%;
@@ -199,17 +186,31 @@
     .source{                                                /*ссылка кнопки*/
         font-family: 'Roboto', sans-serif;
         font-size: 45px;
-        color: #383429;
+        color: #beb59f;
         text-decoration: none;
+    }
+    .front{                                              /*фотка*/
+        float: left;
+        height: 30%;
+        width: 30%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .attention{
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 35px;
+        margin-top: 2%;
+        color: #beb59f;
     }
     #okno {
         width: 500px;
         height: 250px;
+        line-height: 1.5;
         text-align: center;
         padding: 15px;
-        border: 3px solid #2b2211;
+        border: 3px solid #000000;
         border-radius: 10px;
-        color: #ebe4d5;
+        color: #d8d8d8;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 35px;
         position: absolute;
@@ -218,17 +219,7 @@
         bottom: 0;
         left: 0;
         margin: auto;
-        background: rgb(143, 120, 103);
-    }
-    #okno > img{
-        float: left; 
-        padding-left: 25px;
-        height: 207px;
-        width: 195px;
-    }
-    #okno > div{
-        margin-left: 200px; 
-        margin-top: 50px;
+        background: rgb(17, 17, 17);
     }
     #okno > a[href="#main_anchor"]{
         position: absolute;
@@ -238,13 +229,23 @@
         text-decoration: none;
         color: inherit;
     }
+    #okno > img{
+        height:207px; 
+        width:195px;
+        float: left; 
+        padding-left: 25px;
+    }
+    #okno > div{
+        margin-left: 200px; 
+        margin-top: 50px;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 2560px){
     body{                                               /*контейнер*/
         height: 100%;
         display: grid;
-        grid-template-columns: 6% auto;
+        grid-template-columns: 7% auto;
         grid-template-rows: 150px auto;
         grid-template-areas: 
             "header header"
@@ -257,47 +258,35 @@
     #pageHeader{                                    /*хедер*/
         grid-area: header;
         padding: 10px;
-        border-bottom: 5px solid rgb(75, 59, 28);
-        background: radial-gradient(100% 80%, #857154, #6b5a3f);
+        border-bottom: 5px solid rgb(173, 173, 173);
     }
     #pageMenu{                                      /*менюшка*/
         grid-area: nav;
         padding: 10px;
-        border-right: 5px solid rgb(75, 59, 28);
+        border-right: 5px solid rgb(173, 173, 173);
         display: flex;
         flex-direction: column;
     }
     #main{                                          /*главная область*/
         grid-area: main;
     }
-    .front{                                              /*фотка*/
-        float: left;
-        margin-right: 2%;
-        margin-left: 2%;
-    }
     .h3_style{                                               /*заголовок*/   
-        font-family: 'Viaoda Libre', cursive; 
+        font-family: 'Viaoda Libre', cursive;
         font-size: 75px;
         line-height: 1.0;
         margin-bottom: 2%;
-        color: #524833;
+        color: #c5bba6;
         text-align: center;
     }
     .p_style{                                               /*описание*/
         font-family: 'Roboto', sans-serif;
         font-size: 30px;
         margin-top: 2%;
-        color: #241d0b;
+        color: #beb59f;
         padding-left: 2%;
     }
-    .attention{
-        font-family: 'Viaoda Libre', cursive;
-        font-size: 40px;
-        margin-top: 2%;
-        color:  #4d4431;
-    }
     .button_style{                                          /*кнопка*/
-        border: 2px solid #6b6b6b;
+        border: 2px solid #7e6d36;
         margin-right: 35%;
         margin-left: 35%;
         margin-top: 3%;
@@ -306,17 +295,29 @@
     .source{                                                /*ссылка кнопки*/
         font-family: 'Roboto', sans-serif;
         font-size: 45px;
-        color: #383429;
+        color: #beb59f;
         text-decoration: none;
+    }
+    .front{                                              /*фотка*/
+        float: left;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .attention{
+        font-family: 'Viaoda Libre', cursive;
+        font-size: 40px;
+        margin-top: 2%;
+        color: #beb59f;
     }
     #okno {
         width: 500px;
         height: 250px;
+        line-height: 1.5;
         text-align: center;
         padding: 15px;
-        border: 3px solid #2b2211;
+        border: 3px solid #000000;
         border-radius: 10px;
-        color: #ebe4d5;
+        color: #d8d8d8;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 35px;
         position: absolute;
@@ -325,17 +326,7 @@
         bottom: 0;
         left: 0;
         margin: auto;
-        background: rgb(143, 120, 103);
-    }
-    #okno > img{
-        float: left; 
-        padding-left: 25px;
-        height: 207px;
-        width: 195px;
-    }
-    #okno > div{
-        margin-left: 200px; 
-        margin-top: 50px;
+        background: rgb(17, 17, 17);
     }
     #okno > a[href="#main_anchor"]{
         position: absolute;
@@ -345,14 +336,24 @@
         text-decoration: none;
         color: inherit;
     }
+    #okno > img{
+        height:207px; 
+        width:195px;
+        float: left; 
+        padding-left: 25px;
+    }
+    #okno > div{
+        margin-left: 200px; 
+        margin-top: 50px;
+    }
 }
 
 .block_style{                                       /*сам блок*/
     padding-top: 3%;
     padding-bottom: 10%;
 }
-.backgrnd{
-    background-color:#dfdfdf;
+.background{
+    background-color: #0e0e0e;
 }
 #attention_advent, #attention_diab, #attention_system, #attention_minister, #attention_lanya,
 #attention_wolf, #attention_erha_1, #attention_erha_2, #sorry
@@ -370,13 +371,13 @@
 {display: block;}
 .close {
     display: inline-block;
-    border: 1px solid #2b2211;
-    color: #1b1209;
+    border: 1px solid #000000;
+    color: #141414;
     padding: 0 12px;    
-    margin: 20px;
+    margin: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     text-decoration: none;
-    background: #ebe4d5;
+    background: #ececec;
     cursor:pointer;
 }
