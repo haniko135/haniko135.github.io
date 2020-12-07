@@ -3,45 +3,122 @@
     margin: 0;
 }
 
-.h1_block{                                  /*блок с хедером*/
-    margin-top: 20%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 12%;
+@media (min-width: 320px) and (max-width: 749px){
+    .h1_block{   
+        width: 70%;                               /*блок с хедером*/
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .h1_text{                                   /*сам хедер*/
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 60px;
+        text-align: center;
+        color:#fcfcfc;
+        line-height: 0.1;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+    }
+    .some_text{                                 /*текст под хедером*/
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        color: #f8f8f8;
+        line-height: 1.0;
+        margin-top: 7%;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+    }
+    .block_button{                              /*блок ссылки*/
+        width: 60%;
+    }
+    .style_button{                              /*сама ссылка*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+    }
 }
-.h1_text{                                   /*сам хедер*/
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 120px;
-    text-align: center;
-    color:#fcfcfc;
-    line-height: 0.1;
-    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+@media(min-width:750px) and (max-width: 1023px){
+    .h1_block{                                  /*блок с хедером*/
+        width: 70%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .h1_text{                                   /*сам хедер*/
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 90px;
+        text-align: center;
+        color:#fcfcfc;
+        line-height: 0.1;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+    }
+    .some_text{                                 /*текст под хедером*/
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 35px;
+        text-align: center;
+        color: #f8f8f8;
+        line-height: 1.0;
+        margin-top: 7%;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+    }
+    .block_button{                              /*блок ссылки*/
+        width:60%;
+    }
+    .style_button{                              /*сама ссылка*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 60px;
+        text-align: center;
+        color: white;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+    }
 }
-.some_text{                                 /*текст под хедером*/
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    color: #f8f8f8;
-    line-height: 1.0;
-    margin-top: 7%;
-    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+@media(min-width: 1024px) and (max-width: 2560px){
+    .h1_block{                                  /*блок с хедером*/
+        width:70%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .h1_text{                                   /*сам хедер*/
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 150px;
+        text-align: center;
+        color:#fcfcfc;
+        line-height: 0.1;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+    }
+    .some_text{                                 /*текст под хедером*/
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 60px;
+        text-align: center;
+        color: #f8f8f8;
+        line-height: 1.0;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+    }
+    .block_button{                              /*блок ссылки*/
+        width:70%;
+    }
+    .style_button{                              /*сама ссылка*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 70px;
+        text-align: center;
+        color: white;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+        cursor: pointer;
+    }
 }
+
 a{
     text-decoration: none;
     display: block;
-}
-.block_button{                              /*блок ссылки*/
-    margin-top: 12%;
-    margin-left: 35%;
-    margin-right: 35%;
-    display: inline;
-}
-.style_button{                              /*сама ссылка*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 60px;
-    text-align: center;
-    color: white;
-    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s;
+    cursor: pointer;
 }
 a:active{                                   /*активная ссылка*/
     color: lightgray;
@@ -49,19 +126,6 @@ a:active{                                   /*активная ссылка*/
 a:hover{
     color: #919191;
 }
-
-@keyframes gradient{
-    0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 
 .video_back {
     overflow: hidden;
@@ -88,6 +152,12 @@ a:hover{
     width: 100%;
     height: 100%;
     z-index: 4;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    user-select: none;
 }
 @supports (object-fit: cover) {
     .video_back > video {
