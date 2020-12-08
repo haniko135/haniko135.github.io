@@ -245,7 +245,7 @@
     body{                                               /*контейнер*/
         height: 100%;
         display: grid;
-        grid-template-columns: 7% auto;
+        grid-template-columns: 6% auto;
         grid-template-rows: 150px auto;
         grid-template-areas: 
             "header header"
@@ -272,7 +272,7 @@
     }
     .h3_style{                                               /*заголовок*/   
         font-family: 'Viaoda Libre', cursive;
-        font-size: 75px;
+        font-size: 75px; 
         line-height: 1.0;
         margin-bottom: 2%;
         color: #c5bba6;
